@@ -17,5 +17,6 @@ class MainActivity : AppCompatActivity() {
         val listRecyclerView = findViewById<RecyclerView>(R.id.rv_id)
         val adapterRecyclerView = RecyclerViewAdapterMainActivity(postList)
         listRecyclerView.adapter = adapterRecyclerView
+        postList.toMutableList().add()
     }
 }
