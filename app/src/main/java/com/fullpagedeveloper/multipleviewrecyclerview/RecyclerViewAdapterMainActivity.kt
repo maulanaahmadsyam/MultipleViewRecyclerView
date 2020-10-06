@@ -4,10 +4,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.fullpagedeveloper.multipleviewrecyclerview.model.SectionRows
+import com.fullpagedeveloper.multipleviewrecyclerview.model.ModelItem
 import kotlinx.android.synthetic.main.simple_list_item_1.view.*
 
-class RecyclerViewAdapterMainActivity(private val mData: List<SectionRows>): RecyclerView.Adapter<RecyclerView.ViewHolder>(){
+class RecyclerViewAdapterMainActivity(private val mData: List<ModelItem>): RecyclerView.Adapter<RecyclerView.ViewHolder>(){
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 
@@ -17,7 +17,7 @@ class RecyclerViewAdapterMainActivity(private val mData: List<SectionRows>): Rec
         val inflater = LayoutInflater.from(parent.context)
         return when (viewType) {
             1 -> MyViewHolder(inflater.inflate(R.layout.simple_list_item_1, null))
-            else -> ToViewHolder(inflater.inflate(R.layout.simple_list_item_1, null))
+            else -> ToViewHolder(inflater.inflate(R.layout.simple_list_item_2, null))
         }
     }
 
