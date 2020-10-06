@@ -29,7 +29,7 @@ class RecyclerViewAdapterMainActivity(var mData: List<ModelItem>): RecyclerView.
         val inflater = LayoutInflater.from(parent.context)
         return when (viewType) {
             ITEM -> MyViewHolder(inflater.inflate(R.layout.simple_list_item_1, null))
-            else -> ToViewHolder(inflater.inflate(R.layout.simple_list_item_2, null))
+            else -> ToViewHolder(inflater.inflate(R.layout.simple_list_item, null))
         }
     }
 
